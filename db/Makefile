@@ -21,7 +21,7 @@ ifeq "$(PLATFORM)" "macos"
   EXTRALD=-R.
 endif
 
-all: libapue_db.so.1 t4 $(LIBMISC)
+all: libapue_db.so.1 $(LIBMISC) t4
 
 libapue_db.a:	$(COMM_OBJ) $(LIBAPUE)
 		$(AR) rsv $(LIBMISC) $(COMM_OBJ)
